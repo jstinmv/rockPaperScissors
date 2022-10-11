@@ -41,11 +41,11 @@ rockIcon.addEventListener("click", function (e) {
   let roundWinner = document.getElementById("roundWinner");
   roundWinner.innerHTML = `${playRound()} WINS!!`;
   if (playerScore == 5) {
-    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
+    pScore.innerHTML = '<img src="/assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
-    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
+    cScore.innerHTML = '<img src="/assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
   }
@@ -53,32 +53,30 @@ rockIcon.addEventListener("click", function (e) {
   //switch statements to change the score on the scoreboard for the computer and player.
   switch (playerScore) {
     case 1:
-      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      pScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
   switch (computerScore) {
     case 1:
-      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      cScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
 });
@@ -105,11 +103,11 @@ paperIcon.addEventListener("click", function (e) {
   roundWinner.innerHTML = `${playRound()} WINS!!`;
 
   if (playerScore == 5) {
-    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
+    pScore.innerHTML = '<img src="/assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
-    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
+    cScore.innerHTML = '<img src="/assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
   }
@@ -117,32 +115,30 @@ paperIcon.addEventListener("click", function (e) {
   //switch statements to change the score on the scoreboard for the computer and player.
   switch (playerScore) {
     case 1:
-      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      pScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
   switch (computerScore) {
     case 1:
-      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      cScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
 });
@@ -169,11 +165,11 @@ scissorsIcon.addEventListener("click", function (e) {
   roundWinner.innerHTML = `${playRound()} WINS!!`;
 
   if (playerScore == 5) {
-    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
+    pScore.innerHTML = '<img src="/assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
-    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
+    cScore.innerHTML = '<img src="/assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
   }
@@ -181,32 +177,30 @@ scissorsIcon.addEventListener("click", function (e) {
   //switch statements to change the score on the scoreboard for the computer and player.
   switch (playerScore) {
     case 1:
-      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      pScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      pScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
   switch (computerScore) {
     case 1:
-      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/one.png" alt="computer score" />';
       break;
     case 2:
-      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/two.png" alt="computer score" />';
       break;
     case 3:
-      cScore.innerHTML =
-        '<img src="./assets/three.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/three.png" alt="computer score" />';
       break;
     case 4:
-      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      cScore.innerHTML = '<img src="/assets/four.png" alt="computer score" />';
       break;
   }
 });
