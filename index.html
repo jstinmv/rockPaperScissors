@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./rpsApp.js" defer></script>
+  </head>
+  <body>
+    <div class="container-main">
+      <div class="container-head">
+        <h3>rock paper scissors</h3>
+      </div>
+      <div class="container-body">
+        <div class="player-choice">
+          <div class="rock">
+            <button id="rockIcon">
+              <img src="./assets/rock.png" alt="rock" />
+            </button>
+          </div>
+          <div class="paper">
+            <button id="paperIcon">
+              <img src="./assets/paper.png" alt="paper" />
+            </button>
+          </div>
+          <div class="scissors">
+            <button id="scissorsIcon">
+              <img src="./assets/scissors.png" alt="scissors" />
+            </button>
+          </div>
+        </div>
+        <div class="game-stats">
+          <div class="who-wins">
+            <h1 id="roundWinner">
+              SELECT ROCK PAPER OR SCISSORS FROM THE PICTURES ON THE LEFT.
+            </h1>
+          </div>
+          <div class="win-or-lose">
+            <img id="skull" src="./assets/skull.png" alt="you lose" />
+          </div>
+          <div class="round-status"></div>
+          <!-- either you win or you lose emoji-->
+          <div class="scoreboard">
+            <div class="player-score">
+              <img src="./assets/one.png" alt="player score" />
+            </div>
+            <div class="computer-score">
+              <img src="./assets/five.png" alt="computer score" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-foot">
+        <h3>by jstinmv</h3>
+      </div>
+    </div>
+  </body>
+</html>
+
+//end of code

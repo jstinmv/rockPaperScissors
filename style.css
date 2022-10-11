@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-head {
+  display: flex;
+  justify-content: right;
+  /* border: 1px solid blue; */
+  background-color: #2d4262;
+  color: #ffffff;
+  padding: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container-head h3 {
+  font-size: 50px;
+}
+
+.container-body {
+  /* border: 1px solid green; */
+  display: flex;
+  background-color: grey;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.player-choice {
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 50px; */
+  background-color: #736056;
+  margin-left: -70px;
+  margin-top: -125px;
+  border-radius: 20px;
+}
+
+.rock {
+  padding: 20px;
+  background-color: #ced4da;
+  margin: 40px;
+  /* border-radius: 25px; */
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.paper {
+  padding: 20px;
+  background-color: #ced4da;
+  margin: 40px;
+  /* border-radius: 25px; */
+  border-radius: 20px;
+}
+
+.scissors {
+  padding: 20px;
+  background-color: #ced4da;
+  margin: 40px;
+  /* border-radius: 25px; */
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.game-stats {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 100px;
+}
+
+.game-stats win-or-lose {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  padding: 100px;
+}
+.scoreboard {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: space-around;
+  margin-right: 100px;
+}
+
+.scoreboard player-score {
+  /* border: 1px solid green; */
+  margin: 100px;
+}
+
+.scoreboard computer-score {
+  /* border: 1px solid green; */
+  margin: 100px;
+}
+
+.scoreboard img {
+  margin: 50px;
+}
+
+#skull {
+  /* border: 1px solid green; */
+  margin-right: 100px;
+  margin-top: 25px;
+}
+
+.game-stats h1 {
+  margin-right: 100px;
+  color: rgb(113, 44, 27);
+}
+
+.container-foot {
+  /* border: 1px solid yellow; */
+  background-color: #363237;
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+  padding-right: 60px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.container-foot h3 {
+  color: #ffffff;
+}
