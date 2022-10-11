@@ -4,12 +4,12 @@ function resetGame() {
   computerScore = 0;
   roundWinner = 0;
 }
-
+let pScore = document.getElementById("player-score");
+let cScore = document.getElementById("computer-score");
 let playerScore = 0;
 let computerScore = 0;
 
 // creates a random number 0-2 and assigns given number to weapon with if statements
-
 function getComputerChoice() {
   let computerChoice = Math.floor(Math.random() * 3);
   if (computerChoice == 0) return "rock";
@@ -21,7 +21,6 @@ function getComputerChoice() {
 }
 
 //plays a round by comparing rock with the computerSelection and determining the winner with if statements.
-
 const rockIcon = document.getElementById("rockIcon");
 rockIcon.addEventListener("click", function (e) {
   function playRound(playerSelection, computerSelection) {
@@ -37,19 +36,50 @@ rockIcon.addEventListener("click", function (e) {
       return "COMPUTER";
     }
   }
+
   //display tells user who won the match of if it was a tie.
   let roundWinner = document.getElementById("roundWinner");
   roundWinner.innerHTML = `${playRound()} WINS!!`;
-
-  console.log(playerScore);
-  console.log(computerScore);
-  console.log(playRound());
   if (playerScore == 5) {
+    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
+    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
+  }
+
+  //switch statements to change the score on the scoreboard for the computer and player.
+  switch (playerScore) {
+    case 1:
+      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      pScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
+  }
+  switch (computerScore) {
+    case 1:
+      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      cScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
   }
 });
 
@@ -69,19 +99,51 @@ paperIcon.addEventListener("click", function (e) {
       return "COMPUTER";
     }
   }
+
   //display tells user who won the match of if it was a tie.
   let roundWinner = document.getElementById("roundWinner");
   roundWinner.innerHTML = `${playRound()} WINS!!`;
 
-  console.log(playerScore);
-  console.log(computerScore);
-  console.log(playRound());
   if (playerScore == 5) {
+    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
+    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
+  }
+
+  //switch statements to change the score on the scoreboard for the computer and player.
+  switch (playerScore) {
+    case 1:
+      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      pScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
+  }
+  switch (computerScore) {
+    case 1:
+      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      cScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
   }
 });
 
@@ -106,20 +168,45 @@ scissorsIcon.addEventListener("click", function (e) {
   let roundWinner = document.getElementById("roundWinner");
   roundWinner.innerHTML = `${playRound()} WINS!!`;
 
-  //games check to figure out who wins the round and counts  plus one on the ticker displaying 1 - 5 on computer score and player score.
-
-  console.log(playerScore);
-  console.log(computerScore);
-  console.log(playRound());
   if (playerScore == 5) {
+    pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
     resetGame();
   } else if (computerScore == 5) {
+    cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
     resetGame();
   }
+
+  //switch statements to change the score on the scoreboard for the computer and player.
+  switch (playerScore) {
+    case 1:
+      pScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      pScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      pScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      pScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
+  }
+  switch (computerScore) {
+    case 1:
+      cScore.innerHTML = '<img src="./assets/one.png" alt="computer score" />';
+      break;
+    case 2:
+      cScore.innerHTML = '<img src="./assets/two.png" alt="computer score" />';
+      break;
+    case 3:
+      cScore.innerHTML =
+        '<img src="./assets/three.png" alt="computer score" />';
+      break;
+    case 4:
+      cScore.innerHTML = '<img src="./assets/four.png" alt="computer score" />';
+      break;
+  }
 });
-
-//end of the game hope you enjoyed
-
-//end of code
