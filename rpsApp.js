@@ -46,11 +46,9 @@ rockIcon.addEventListener("click", function (e) {
   if (playerScore == 5) {
     pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   } else if (computerScore == 5) {
     cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   }
 
   //switch statements to change the score on the scoreboard for the computer and player.
@@ -110,11 +108,9 @@ paperIcon.addEventListener("click", function (e) {
   if (playerScore == 5) {
     pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   } else if (computerScore == 5) {
     cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   }
 
   //switch statements to change the score on the scoreboard for the computer and player.
@@ -174,11 +170,9 @@ scissorsIcon.addEventListener("click", function (e) {
   if (playerScore == 5) {
     pScore.innerHTML = '<img src="./assets/five.png" alt="player score" />';
     alert("PLAYER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   } else if (computerScore == 5) {
     cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
     alert("COMPUTER WINS THE MATCH, GAME OVER!!");
-    resetGame();
   }
 
   //switch statements to change the score on the scoreboard for the computer and player.
