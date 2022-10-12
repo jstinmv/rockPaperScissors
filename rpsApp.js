@@ -3,7 +3,10 @@ function resetGame() {
   playerScore = 0;
   computerScore = 0;
   roundWinner = 0;
+  pScore.innerHTML = '<img src="./assets/zero.png" alt="player score" />';
+  cScore.innerHTML = '<img src="./assets/zero.png" alt="computer score" />';
 }
+
 let pScore = document.getElementById("player-score");
 let cScore = document.getElementById("computer-score");
 let playerScore = 0;
@@ -210,3 +213,6 @@ scissorsIcon.addEventListener("click", function (e) {
       break;
   }
 });
+
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", resetGame);

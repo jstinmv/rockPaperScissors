@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Hack;
 }
 
 body {
@@ -134,3 +135,14 @@ body {
 .container-foot h3 {
   color: #ffffff;
 }
+
+#reset-button {
+  padding: 25px;
+  background-color: #ced4da;
+  border-radius: 20px;
+  margin-right: 95px;
+}
+
+
+
+
