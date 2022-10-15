@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rock paper scissors</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./rpsApp.js" defer></script>
+    <script src="./scripts.js" defer></script>
   </head>
   <body>
     <div class="container-main">
@@ -33,12 +33,12 @@
         </div>
         <div class="game-stats">
           <div class="who-wins">
-            <h1 id="roundWinner">
-              SELECT ROCK PAPER OR SCISSORS FROM THE PICTURES ON THE LEFT.
-            </h1>
+            <h1 id="roundWinner"><center>
+              CLICK ROCK, PAPER, OR SCISSORS.
+            </center></h1>
           </div>
-          <div class="win-or-lose">
-            <img id="skull" src="./assets/skull.png" alt="you lose" />
+          <div id="win-or-lose" class="win-or-lose">
+            <img id="roundWinnerIcon" src="/assets/boxing.png" />
           </div>
           <div class="round-status"></div>
           <!-- either you win or you lose emoji-->
