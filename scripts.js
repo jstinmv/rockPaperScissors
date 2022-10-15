@@ -11,6 +11,7 @@ let pScore = document.getElementById("player-score");
 let cScore = document.getElementById("computer-score");
 let roundResult = document.getElementById("roundWinner");
 let roundResultIcon = document.getElementById("win-or-lose");
+let result = document.getElementById("win-or-lose");
 
 //watches for see is paper rock or scissors is clicked then run the playRound function and passes paper rock or scissor as the argument.
 rockIcon.addEventListener("click", function () {
@@ -34,7 +35,9 @@ function resetGame() {
   roundWinner = "";
   pScore.innerHTML = '<img src="./assets/zero.png" alt="player score" />';
   cScore.innerHTML = '<img src="./assets/zero.png" alt="computer score" />';
-  roundResultIcon.innerHTML = "<img src='./assets/boxing.png' alt='boxing' />";
+  roundResultIcon.innerHTML =
+    "<img src='./assets/elephant.png' alt='elephant' />";
+  roundResult.innerHTML = "<p>Lets try this again! Are you ready?</p>";
 }
 
 //random number generator that assign paper rock or scissors to computer
@@ -70,20 +73,23 @@ function playRound(playerSelection) {
   switch (roundWinner) {
     case "tie":
       tieScore++;
-      roundResult.innerHTML = "<h1><center>ITS A TIE!</center></h1>";
-      roundResultIcon.innerHTML = "<img src='./assets/tie.png' alt='tie' />";
+      roundResult.innerHTML = "<h1>ITS A TIE!</h1>";
+      roundResultIcon.innerHTML = "<img src='./assets/hug.png' alt='tie' />";
+      result.innerHTML = `You chose ${playerSelection} and the Computer chose ${computerSelection}`;
       break;
     case "player":
       playerScore++;
-      roundResult.innerHTML = "<h1><center>YOU WIN!</center></h1>";
+      roundResult.innerHTML = "<h1>YOU WIN!</h1>";
       roundResultIcon.innerHTML =
         "<img src='./assets/alien.png' alt='alien' />";
+      result.innerHTML = `You chose ${playerSelection} and the Computer chose ${computerSelection}`;
       break;
     case "computer":
       computerScore++;
-      roundResult.innerHTML = "<h1><center>COMPUTER WINS!</center></h1>";
+      roundResult.innerHTML = "<h1>COMPUTER WINS!</h1>";
       roundResultIcon.innerHTML =
         "<img src='./assets/skull.png' alt='skull' />";
+      result.innerHTML = `You chose ${playerSelection} and the Computer chose ${computerSelection}`;
       break;
   }
 
@@ -104,6 +110,9 @@ function playRound(playerSelection) {
       break;
     case 5:
       pScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
+      alert(
+        "Congrats You Won The MATCH! If you would like to play again hit the Reset Button below."
+      );
       break;
   }
 
@@ -124,6 +133,9 @@ function playRound(playerSelection) {
       break;
     case 5:
       cScore.innerHTML = '<img src="./assets/five.png" alt="computer score" />';
+      alert(
+        "Sorry You Lost The MATCH! If you would like to play again hit the Reset Button below."
+      );
       break;
   }
 }

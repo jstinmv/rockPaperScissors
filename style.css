@@ -136,12 +136,44 @@ body {
 }
 
 #reset-button {
-  padding: 25px;
+  padding: 20px 40px;
   background-color: #ced4da;
   border-radius: 20px;
-  margin-right: 95px;
+  margin-right: 110px;
 }
 
+#roundWinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#roundWinner h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.win-or-lose {
+  margin-top: 50px;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#win-or-lose h3 {
+}
+
+.who-wins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

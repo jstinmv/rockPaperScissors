@@ -21,6 +21,17 @@ To Add:
 -Bigger and more obvious visual queue that there has been a tie. (right now it looks like nothing happened. But its showing in the console when tested.)
 -Better styling with CSS, change colors, change fonts, and shadows for depth.
 
+-jstinmv
+
+```
+
+```
+
+10/15/2022
+Rewrote js from the ground up using lessons I learned writing v1.0 and applying those principals to the new program. Also changed some icons and tried to make it more obvious when there is a tie.
+
+-jstinmv
+
 ```
 
 ```
