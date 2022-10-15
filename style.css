@@ -86,6 +86,7 @@ body {
   /* border: 1px solid red; */
   padding: 100px;
 }
+
 .scoreboard {
   display: flex;
   /* border: 1px solid blue; */
@@ -139,13 +140,7 @@ body {
   padding: 20px 40px;
   background-color: #ced4da;
   border-radius: 20px;
-  margin-right: 110px;
-}
-
-#roundWinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 105px;
 }
 
 #roundWinner h1 {
@@ -163,9 +158,6 @@ body {
   align-items: center;
 }
 
-#win-or-lose h3 {
-}
-
 .who-wins {
   display: flex;
   justify-content: center;
@@ -176,4 +168,5 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 55px
 }
